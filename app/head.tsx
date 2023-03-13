@@ -3,7 +3,7 @@ import React from 'react'
 export default function Head() {
   return (
     <>
-      <title>Custom AI Chat</title>
+      <title>Context Test</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <link rel="icon" href="/favicon.ico" />
     </>

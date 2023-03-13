@@ -4,7 +4,7 @@
 
 @layer components {
   .infoText {
-    @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px]
+    @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px];
   }
 }
 
@@ -12,4 +12,193 @@
   html {
     color-scheme: dark;
   }
+}
+
+body {
+  background-color: #1e2328;
+}
+
+h1 {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+div,
+button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 2px solid #ffa500;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffa500;
+  color: #1e2328;
+  box-shadow: 2px 2px #000;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.context-container {
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+/* Counter */
+
+.counter {
+  animation: fade-in 2s ease-out;
+  -webkit-animation: fade-in 2s ease-out;
+  -moz-animation: fade-in 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rainbow-color {
+  0% {
+    color: #ff0000;
+  }
+  10% {
+    color: #ff7f00;
+  }
+  20% {
+    color: #ffd400;
+  }
+  30% {
+    color: #bfff00;
+  }
+  40% {
+    color: #00ff7f;
+  }
+  50% {
+    color: #00ffec;
+  }
+  60% {
+    color: #00bfff;
+  }
+  70% {
+    color: #547df9;
+  }
+  80% {
+    color: #bf00ff;
+  }
+  90% {
+    color: #ff0080;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@-webkit-keyframes rainbow-color {
+  0% {
+    color: #ff0000;
+  }
+  10% {
+    color: #ff7f00;
+  }
+  20% {
+    color: #ffd400;
+  }
+  30% {
+    color: #bfff00;
+  }
+  40% {
+    color: #00ff7f;
+  }
+  50% {
+    color: #00ffec;
+  }
+  60% {
+    color: #00bfff;
+  }
+  70% {
+    color: #547df9;
+  }
+  80% {
+    color: #bf00ff;
+  }
+  90% {
+    color: #ff0080;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@-moz-keyframes rainbow-color {
+  0% {
+    color: #ff0000;
+  }
+  10% {
+    color: #ff7f00;
+  }
+  20% {
+    color: #ffd400;
+  }
+  30% {
+    color: #bfff00;
+  }
+  40% {
+    color: #00ff7f;
+  }
+  50% {
+    color: #00ffec;
+  }
+  60% {
+    color: #00bfff;
+  }
+  70% {
+    color: #547df9;
+  }
+  80% {
+    color: #bf00ff;
+  }
+  90% {
+    color: #ff0080;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+.counter-rainbow {
+  animation: rainbow-color 7s ease-in-out infinite;
+  -webkit-animation: rainbow-color 7s ease-in-out infinite;
+  -moz-animation: rainbow-color 7s ease-in-out infinite;
 }
